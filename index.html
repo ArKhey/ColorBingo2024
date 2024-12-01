@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>400k</title>
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="dist/aos.css" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+
+
+<link href="https://www.promperu.gob.pe/TurismoIN/Content/fonts/bree/stylesheet.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="src/jquery.lazyload-any.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
+
+
+
+
+
+
+
+
+
+<style>
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.grid { width:auto; position:relative; display:flex;}
+.grid-item { width: 350px; display: inline-block; background-color:#FFF; margin: 10px; position:relative; left: 50%; }
+.grid-item--width2 { width: 400px; }
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter100 {
+  animation: counter100 2s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+  animation-fill-mode: forwards;
+  text-align:center;
+  color:#575756;
+}
+.counter100::after {
+  content: counter(num);
+}
+
+.counter32 {
+  animation: counter32 2s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 32px system-ui;
+  line-height: 0px;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  animation-fill-mode: forwards;
+  text-align:center;
+  color:#801163;
+  vertical-align:middle;
+}
+.counter32::after {
+  content: counter(num) " %";
+}
+
+
+.counter33 {
+  animation: counter33 2s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 32px system-ui;
+  line-height: 0px;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  animation-fill-mode: forwards;
+  text-align:center;
+  color:#801163;
+  vertical-align:middle;
+}
+.counter33::after {
+  content: counter(num) " %";
+}
+
+
+.counter15 {
+  animation: counter15 2s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 32px system-ui;
+  line-height: 0px;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  animation-fill-mode: forwards;
+  text-align:center;
+  color:#575756;
+  vertical-align:middle;
+}
+.counter15::after {
+  content: counter(num) " %";
+}
+
+
+.counter10 {
+  animation: counter10 2s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 32px system-ui;
+  line-height: 0px;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  animation-fill-mode: forwards;
+  text-align:center;
+  color:#575756;
+  vertical-align:middle;
+}
+.counter10::after {
+  content: counter(num) " %";
+}
+
+
+.counter43 {
+  animation: counter43 2s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 26px system-ui;
+  line-height: 0px;
+  padding: 20px 0 0 0;
+  height: 100%;
+  width: 100%;
+ 
+  justify-content: left;
+  align-items: left;  
+  animation-fill-mode: forwards;
+  text-align:left;
+  color:#801163;
+  vertical-align:middle;
+}
+.counter43::after {
+  content: counter(num) " %";
+}
+
+
+
+.counter31 {
+  animation: counter31 2s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 26px system-ui;
+  line-height: 0px;
+  padding: 20px 0 0 0;
+  height: 100%;
+  width: 100%;
+ 
+  justify-content: left;
+  align-items: left;  
+  animation-fill-mode: forwards;
+  text-align:left;
+  color:#801163;
+  vertical-align:middle;
+}
+.counter31::after {
+  content: counter(num) " %";
+}
+
+
+.counter26 {
+  animation: counter26 2s alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 26px system-ui;
+  line-height: 0px;
+  padding: 20px 0 0 0;
+  height: 100%;
+  width: 100%;
+  justify-content: left;
+  align-items: left;  
+  animation-fill-mode: forwards;
+  text-align:left;
+  color:#801163;
+  vertical-align:middle;
+}
+.counter26::after {
+  content: counter(num) " %";
+}
+
+
+@keyframes counter100 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
+}
+
+
+@keyframes counter32 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 32;
+  }
+}
+
+@keyframes counter33 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 33;
+  }
+}
+
+@keyframes counter15 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 15;
+  }
+}
+
+@keyframes counter10 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 10;
+  }
+}
+
+
+@keyframes counter43 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 43;
+  }
+}
+
+
+@keyframes counter31 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 31;
+  }
+}
+
+@keyframes counter26 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 26;
+  }
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="section1">
+
+<div class="title">
+<p><span style=" font-weight:bold; font-family:breeregular; font-size:40px; text-align:center; color:#0079c1; line-height:44px;">Omedetou 400k subs</span><br>
+<span style=" font-weight:regular; font-family:Open Sans; font-size:28px; text-align:center; color:#575756; line-height:32px;"></span></p>
+
+</div>
+
+
+<!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "kotorihikarivt"
+  });
+</script>
+</div>
+
+
+<div class="section2">
+<div class="aos-item-100" data-aos="fade-up">
+<img style="width: 100%; height:; position:relative;" src="img/bg2.jpg">
+</div>
+ </div>
+
+
+<div class="section1" style="min-height:auto; padding: 200px 0;">
+
+
+
+
+
+<div class="title1">
+
+<span style=" font-weight:bold; font-family:breeregular; font-size:40px; text-align:center; color:#0079c1; line-height:44px;">Shallys Cover</span><br>
+
+<div class="video-container">
+<iframe style="max-height:720px; max-width:1280px;" src="https://www.youtube.com/embed/Ii7rtNaGlls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+	</p>
+
+
+
+
+</div>
+</div>
+
+
+
+<div class="section1">
+
+
+
+
+
+
+<div class="grid">
+  <div class="aos-item-100" data-aos="fade-up"><div class="grid-item"><iframe  src="https://www.youtube.com/embed/live_stream?channel=UCb8-01ryqmnWhJhoznv9OgA" frameborder="0" allowfullscreen></iframe></div></div>
+  <!--<div class="grid-item grid-item--width2">-->  <div class="aos-item-100" data-aos="fade-up"><div class="grid-item"><iframe src="https://player.twitch.tv/?channel=kotorihikarivt&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+</div></div>
+  <div class="aos-item-100" data-aos="fade-up"><div class="grid-item">Congratulations on your 3rd Anniversary! Thank you for leading Hololive into what it is today, I love your streams and covers! (๑╹ᆺ╹)♪ 三周年おめでとうございます！いつもホロライブのみんなを見守り、ありがとうございます！そらの生配信と歌カバーも大好きです！Congratulations on your 3rd Anniversary! Thank you for leading Hololive into what it is today, I love your streams and covers! (๑╹ᆺ╹)♪
+！</div></div>
+<div class="aos-item-100" data-aos="fade-up"><div class="grid-item">Congratulations on your 3rd Anniversary! Thank you for leading Hololive into what it is today, I love your streams and covers! (๑╹ᆺ╹)♪ 三周年おめでとうございます！いつもホロライブのみんなを見守り、ありがとうございます！そらの生配信と歌カバーも大好きです！</div></div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+  
+
+  
+<script src="dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+    <script>
+      requirejs.config({
+          baseUrl: 'dist',
+      });
+
+      require(['aos'], function(AOS){
+          AOS.init({
+              easing: 'ease-in-out-sine'
+          });
+      });
+    </script> -->
+    
+    
+    
+    <script>
+    function load(img)
+    {
+      img.fadeOut(0, function() {
+        img.fadeIn(1000);
+      });
+    }
+    $('.lazyload').lazyload({load: load});
+      </script>
+    
+    
+<script>
+    
+    $('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+    
+    </script>
+    
+    
+</body>
+</html>
